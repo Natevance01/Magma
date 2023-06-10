@@ -7,8 +7,11 @@ extern Magma::Application* Magma::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	Magma::Log::Init();
+	MG_CORE_WARN("Initialized core!");
+	int a = 5;
+	MG_INFO("Hello! Var={0}", a);
 
-	printf("Magma Engine");
 	auto app = Magma::CreateApplication();
 	app->Run();
 	delete app;

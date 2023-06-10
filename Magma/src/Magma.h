@@ -1,8 +1,8 @@
 #pragma once
 
 //For use by Magma Applications
-#include <stdio.h>
 #include "Magma/Application.h"
+#include "Magma/Log.h"
 
 // ----- Entry Point -----
 

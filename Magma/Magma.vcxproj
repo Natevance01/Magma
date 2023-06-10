@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Magma\Log.h" />
     <ClInclude Include="src\Magma.h" />
     <ClInclude Include="src\Magma\Application.h" />
     <ClInclude Include="src\Magma\Core.h" />
     <ClInclude Include="src\Magma\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Magma\Log.cpp" />
     <ClCompile Include="src\Magma\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -93,6 +95,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MG_PLATFORM_WINDOWS;MG_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Magma\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,6 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MG_PLATFORM_WINDOWS;MG_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Magma\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
